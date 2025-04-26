@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#1E90FF"         # Dodger Blue for vibrant buttons
+backgroundColor = "#f8f9fa"      # Light gray background (Bootstrap-like)
+secondaryBackgroundColor = "#ffffff"  # White cards/panels
+textColor = "#000000"            # Black text for readability
+font = "sans serif"
