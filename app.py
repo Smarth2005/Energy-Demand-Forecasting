@@ -97,9 +97,13 @@ st.markdown(
 #@st.cache_resource
 def load_model():
     import os
-    APP_DIR = os.path.dirname(os.path.abspath(__file__))
-    model_path = os.path.join(APP_DIR, "models", "xgboost_model.pkl")
+    import joblib
+    
+    model_path = "models/xgboost_model.pkl"
     return joblib.load(model_path)
+
+# Load the model
+model = load_model()
 
 model = load_model()
 
