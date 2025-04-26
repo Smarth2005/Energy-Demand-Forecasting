@@ -96,7 +96,7 @@ st.markdown(
 # ---------- Load Model ----------
 @st.cache_resource
 def load_model():
-    return joblib.load("models/xgboost_model.pkl")
+    return joblib.load("ECP_dashboard/models/xgboost_model.pkl")
 
 model = load_model()
 
