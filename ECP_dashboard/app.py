@@ -10,8 +10,8 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 st.set_page_config(page_title="⚡ Energy Prediction Dashboard", layout="wide")
 
 # ---------- Top Row with Logo and Cartoon in One Line ----------
-logo = Image.open("assets/logo.png")
-cartoon = Image.open("assets/cartoon.png")
+logo = Image.open("ECP_dashboard/assets/logo.png")
+cartoon = Image.open("ECP_dashboard/assets/cartoon.png")
 
 # Create a layout with 3 columns (centered)
 col1, col2, col3 = st.columns([1, 2, 1])
