@@ -105,8 +105,6 @@ def load_model():
 # Load the model
 model = load_model()
 
-model = load_model()
-
 import streamlit as st
 import streamlit.components.v1 as components
 
@@ -262,10 +260,15 @@ if input_mode == "✍️ Manual Input":
     from datetime import datetime
     import numpy as np
     import pandas as pd
+    import pytz
+
+    # Set timezone (for example, 'Asia/Kolkata')
+    tz = pytz.timezone('Asia/Kolkata')
+    current_time = datetime.now(tz).time()
 
     # === Input Fields ===
     date_input = st.date_input("Select Date", datetime.now().date())
-    time_input = st.time_input("Select Time", datetime.now().time())
+    time_input = st.time_input("Select Time", current_time)
     datetime_input = datetime.combine(date_input, time_input)
     temp = st.number_input("Temperature (°C)", value=25.0)
     dew = st.number_input("Dew Point (°C)", value=10.0)
