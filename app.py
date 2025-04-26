@@ -94,7 +94,7 @@ st.markdown(
 
 
 # ---------- Load Model ----------
-@st.cache_resource
+#@st.cache_resource
 def load_model():
     import os
     APP_DIR = os.path.dirname(os.path.abspath(__file__))
